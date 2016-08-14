@@ -25,6 +25,8 @@
 
     <!-- Theme CSS -->
     <link href="css/creative.min.css" rel="stylesheet">
+    
+    <link href="http://vjs.zencdn.net/5.10.8/video-js.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -457,11 +459,17 @@
                         <img src="img/portfolio/thumbnails/aprenderJugando.png" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
+                            <video id="my-video" class="video-js" controls preload="auto" width="640" height="264"
+  poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+    <source src="MY_VIDEO.mp4" type='video/mp4'>
+    <source src="MY_VIDEO.webm" type='video/webm'>
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a web browser that
+      <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+    </p>
+  </video>
                                 <div class="project-category text-faded">
                                     Aprender Jugando
-                                </div>
-                                <div class="project-name">
-                                    
                                 </div>
                             </div>
                         </div>
@@ -607,6 +615,8 @@
 
     <!-- Theme JavaScript -->
     <script src="js/creative.min.js"></script>
+    
+    <script src="http://vjs.zencdn.net/5.10.8/video.js"></script>
 
 </body>
 
