@@ -450,7 +450,7 @@
 
 
     <section class="no-padding" id="portfolio">
-      <div class="row">
+      <div id="portfolioDiv" class="row">
           <div class="col-lg-4 col-sm-12">
             <img class="imgPortfolio" src="img/portfolio/thumbnails/aprenderJugando.png">
           </div>
@@ -459,7 +459,7 @@
               <iframe src="https://www.youtube.com/embed/hrhKMtLcj9k" frameborder="0" allowfullscreen></iframe>
             </div>
           </div>
-        </div>
+      </div>
     </section>
 
     <!-- <aside class="bg-dark">
@@ -523,6 +523,15 @@
 
     <!-- Theme JavaScript -->
     <script src="js/creative.min.js"></script>
+
+    <script>
+    $(window).load(function() {
+      $('#portfolioDiv').find('img').each(function() {
+        var imgClass = (this.width/this.height > 1) ? 'wide' : 'tall';
+        $(this).addClass(imgClass);
+      })
+    })
+    </script>
 
 </body>
 
