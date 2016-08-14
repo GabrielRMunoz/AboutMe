@@ -8,6 +8,7 @@
   padding: 0;
   margin: 0;
   height: 450px;
+  display: block;
 }
 
  .video-container {
