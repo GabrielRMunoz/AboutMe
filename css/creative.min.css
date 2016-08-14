@@ -7,11 +7,10 @@
 .divPortfolio {
   padding: 0;
   margin: 0;
-  display: block;
 }
 
 .divPortfolio img {
-  width: 100% !important;
+  width: 100%;
 }
 
  .video-container {
